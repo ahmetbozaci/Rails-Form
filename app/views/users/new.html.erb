@@ -12,6 +12,21 @@
 
   <input type="submit" value="Submit">
 </form>-->
+
+<!--<%= form_tag '/users' do |f| %>
+  <%= label_tag :username, "Username :" %>
+  <%= text_field_tag :username, nil, placeholder: "Your name here", required: true %>
+
+  <%= label_tag :email, "Email :" %>
+  <%= email_field_tag :email, nil, placeholder: "Your email here", required: true %>
+
+  <%= label_tag :password, "Password :" %>
+  <%= password_field_tag :password, nil, placeholder: "Your password here", required: true %>
+
+  <%= submit_tag "Submit" %>
+    
+<% end %>-->
+  
 <%= form_with model: @user do |f| %>
   <%= f.label :username %>
   <%= f.text_field :username, placeholder: 'Your name here' %>
